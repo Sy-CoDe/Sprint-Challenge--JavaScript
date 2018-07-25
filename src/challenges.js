@@ -7,18 +7,18 @@ const each = (elements, cb) => {
     cb(elements[i], i);
   } //for loop answer
   
-  elements.forEach(e => cb(e));  //.foreach answer not working
+  // elements.forEach(e => cb(e));  //.foreach answer not working
   // return items.forEach(item =>  alert(item) );
   // Iterates over a list of elements, yielding each in turn to the `cb` function.
   // This only needs to work with arrays.
 };
 
 const map = (elements, cb) => {
-  const arrNew = [];
-  for (let i = 0; i < elements.length; i++) {
-    arrNew[i] = cb(elements[i]);
-  }
-  return arrNew; // for loop answer
+  // const arrNew = [];
+  // for (let i = 0; i < elements.length; i++) {
+  //   arrNew[i] = cb(elements[i]);
+  // }
+  // return arrNew; // for loop answer
 
   return elements.map(e => cb(e));   //.map answer
   // Produces a new array of values by mapping each value in list through a transformation function.
